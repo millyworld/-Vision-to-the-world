@@ -1,4 +1,6 @@
-export default function CTASection() {
+<div data-aos="fade-right">
+  <p>This block will slide in from the right</p>
+</div>export default function CTASection() {
   return (
     <div className="py-12 bg-white text-center">
       <h2 className="text-3xl font-bold mb-4">Write Your Own Adventure</h2>
