@@ -7,9 +7,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+  "next": "15.x.x",
+  "react": "18.x.x",
+  "react-dom": "18.x.x",
+  "aos": "^2.3.4"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1",
