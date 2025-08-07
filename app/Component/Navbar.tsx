@@ -6,11 +6,16 @@ export default function Navbar() {
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <div className="text-2xl font-bold text-black dark:text-white">
+        {/* Animated Logo */}
+        <div
+          className="text-2xl font-bold text-black dark:text-white"
+          data-aos="fade-right"
+        >
           VISION TO THE WORLD
         </div>
 
-        <div className="space-x-4 hidden md:flex">
+        {/* Animated Navigation Links */}
+        <div className="space-x-4 hidden md:flex" data-aos="fade-down">
           {[
             { name: "Home", href: "/" },
             { name: "About", href: "/about" },
@@ -30,7 +35,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="space-x-2 flex items-center">
+        {/* Buttons + Dark Mode Toggle */}
+        <div className="space-x-2 flex items-center" data-aos="fade-left">
           <button
             onClick={() => {
               document.documentElement.classList.toggle('dark');
